@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Rahim Ahmed",
+    "age": 28,
+    "email": "rahim.ahmed@example.com"
+  },
+  {
+    "name": "Nusrat Jahan",
+    "age": 24,
+    "email": "nusrat.jahan@example.com"
+  },
+  {
+    "name": "Tanvir Hasan",
+    "age": 31,
+    "email": "tanvir.hasan@example.com"
+  },
+  {
+    "name": "Farzana Akter",
+    "age": 27,
+    "email": "farzana.akter@example.com"
+  },
+  {
+    "name": "Mahmudul Islam",
+    "age": 35,
+    "email": "mahmudul.islam@example.com"
+  }
+]
