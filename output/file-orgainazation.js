@@ -68,5 +68,7 @@ function getCategory(fileName) {
   return "others"; // ✔ return string
 }
 
-// ✔ pass filename argument
-console.log(getCategory("vacation.jpg"));
+function organizeFiles() {
+  console.log("file organizer \n");
+  console.log("source", sourceDir);
+}
