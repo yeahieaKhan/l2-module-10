@@ -27,4 +27,17 @@ const testFiles = [
   "backup.zip",
   "data.xlsx",
   "file.xyz",
+  "nodejs.zip",
 ];
+
+function initializeDirectories() {
+  if (!fs.existsSync(sourceDir)) {
+    fs.mkdirSync(sourceDir, { recursive: true });
+    testFiles.forEach((file) => {
+      fs.writeFileSync(path.join(sourceDir, file), `Content of ${file}`);
+    });
+  }
+  console.log("messy directory files are created");
+}
+
+initializeDirectories();
