@@ -22,3 +22,5 @@ const sha512Hash = crypto
   .digest("hex");
 console.log("Input: password123");
 console.log("output", sha512Hash);
+
+console.log(2 ** 32 / 10 ** 9);
