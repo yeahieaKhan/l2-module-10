@@ -48,7 +48,25 @@ function initializeDirectories() {
     if (!fs.existsSync(categoryPath)) {
       fs.mkdirSync(categoryPath);
     }
+
+    console.log("organization directory creating done");
   });
 }
 
 initializeDirectories();
+
+function getCategory(fileName) {
+  const ext = path.extname(fileName).toLowerCase();
+
+  // ✔ correct object name + no semicolon + proper loop body
+  for (const [category, extensions] of Object.entries(categories)) {
+    if (extensions.includes(ext)) {
+      return category; // ✔ return category name
+    }
+  }
+
+  return "others"; // ✔ return string
+}
+
+// ✔ pass filename argument
+console.log(getCategory("vacation.jpg"));
